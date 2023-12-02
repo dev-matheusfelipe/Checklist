@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>okple To Do List</title>
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <!--Font Awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container">
+
+        <h1>CHECKLIST DO OPERADOR</h1>
+
+        <p class="text-dark fs.min">Este checklist deverá ser preenchido pelo próprio empregado antes de iniciar suas atividades. Se houver alguma condição insegura ou item k.o ok (ko), comunicar a liderança e k.o iniciar a jornada. (marcação com um "x" em cada item ou "na" caso k.o se aplicar na área.)</p>
+
+        <form action="https://formsubmit.co/your@email.com" method="POST">
+            <!-- NOME -->
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text col-4 fs-7 fs-7" id="inputGroup-sizing-sm">OPERADOR:</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Insira o seu nome">
+            </div>
+            <!-- TIME -->
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text col-4 fs-7" id="inputGroup-sizing-sm">TEAM/LEADER:</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Insira o seu team/leader">
+            </div>
+            <!-- DOMÍNIO -->
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text col-4 fs-7" id="inputGroup-sizing-sm">DOMÍNIO/OPERAÇÃO:</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Insira o seu domínio/operação">
+            </div>
+            <!-- TURNO -->
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text col-4 fs-7" id="inputGroup-sizing-sm">TURNO: </span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder=" ">
+                <div class="input-group-text col-2">
+                    <input type="checkbox" class="btn-check" id="btn-check-67-outlined" autocomplete="off">
+                    <label class="btn btn-outline-dark col-12" for="btn-check-67-outlined">A</label>
+                </div>
+                <div class="input-group-text col-2">
+                    <input type="checkbox" class="btn-check" id="btn-check-66-outlined" autocomplete="off">
+                    <label class="btn btn-outline-dark col-12" for="btn-check-66-outlined">B</label>
+                </div>
+                <div class="input-group-text col-2">
+                    <input type="checkbox" class="btn-check" id="btn-check-65-outlined" autocomplete="off">
+                    <label class="btn btn-outline-dark col-12" for="btn-check-65-outlined">C</label>
+                </div>
+                <div class="col-12">
+                    <small class="form-text text-muted"><i>* Selecione o seu turno.</i></small>
+                </div>
+            </div>
+            <!-- DATA -->
+            <div class="input-group input-group-sm mb-3">
+                <div class="col">
+                    <span class="input-group-text fs-7" id="inputGroup-sizing-sm">DATA:</span>
+                     <input type="date" value="" name="data" class="form-control" required /> 
+                     <small class="form-text text-muted"><i>* Data da verificação.</i></small>
+                </div>
+            </div>
+
+            <hr>
+            <div class="form-group">
+                <h3><b>EQUIPAMENTO DE PROTEÇÃO INDIVIDUAL:</b></h3>
+                <P>A estação de trabalho está devidamente sinalizada? O operador está utilizando todos os EPIs indicados?</P>
+            </div>
+
+            <!-- CAPACETE -->
+            <div class="input-group mb-3">
+                <span class="input-group-text col-4 fs-7" id="inputGroup-sizing-sm">CAPACETE:</span>
+                <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Digite aqui se houver irregularidade…">
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-64-outlined" autocomplete="off">
+                    <label class="btn btn-outline-success" for="btn-check-64-outlined">ok</label><br>
+                </div>
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-63-outlined" autocomplete="off">
+                    <label class="btn btn-outline-danger" for="btn-check-63-outlined">k.o</label>
+                </div>
+            </div>
+            <!-- LUVAS -->
+            <div class="input-group mb-3">
+                <span class="input-group-text col-4 fs-7" id="inputGroup-sizing-sm">LUVAS:</span>
+                <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Digite aqui se houver irregularidade…">
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-62-outlined" autocomplete="off">
+                    <label class="btn btn-outline-success" for="btn-check-62-outlined">ok</label><br>
+                </div>
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-61-outlined" autocomplete="off">
+                    <label class="btn btn-outline-danger" for="btn-check-61-outlined">k.o</label>
+                </div>
+            </div>
+            <!-- OCULOS -->
+            <div class="input-group mb-3">
+                <span class="input-group-text col-4 fs-7" id="inputGroup-sizing-sm">OCULOS:</span>
+                <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Digite aqui se houver irregularidade…">
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-60-outlined" autocomplete="off">
+                    <label class="btn btn-outline-success" for="btn-check-60-outlined">ok</label><br>
+                </div>
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-59-outlined" autocomplete="off">
+                    <label class="btn btn-outline-danger" for="btn-check-59-outlined">k.o</label>
+                </div>
+            </div>
+            <!-- PROTETORES OAURICULAR-->
+            <div class="input-group mb-3">
+                <span class="input-group-text col-4 fs-7" id="inputGroup-sizing-sm">PROTETORES AURICULAR:</span>
+                <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Digite aqui se houver irregularidade…">
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-58-outlined" autocomplete="off">
+                    <label class="btn btn-outline-success" for="btn-check-58-outlined">ok</label><br>
+                </div>
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-57-outlined" autocomplete="off">
+                    <label class="btn btn-outline-danger" for="btn-check-57-outlined">k.o</label>
+                </div>
+            </div>
+            <!-- BOTAS-->
+            <div class="input-group mb-3">
+                <span class="input-group-text col-4 fs-7" id="inputGroup-sizing-sm">BOTAS:</span>
+                <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Digite aqui se houver irregularidade…">
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-56-outlined" autocomplete="off">
+                    <label class="btn btn-outline-success" for="btn-check-56-outlined">ok</label><br>
+                </div>
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-55-outlined" autocomplete="off">
+                    <label class="btn btn-outline-danger" for="btn-check-55-outlined">k.o</label>
+                </div>
+            </div>
+
+            <hr>
+            <div class="form-group">
+                <h3><b>MÁQUINAS E EQUIPAMENTOS:</b></h3>
+                <P>(Proteções, comandos de emergência, bi-manual, barreiras, ópticas, pedal de segurança da esteira, cadeado de segurança, etiquetas, taco de segurança, fluxostao, duplo/triplo, etc.) estão funcionando corretamente e em bom estado de conservação? As partes móveis estão devidamente protegidas?</P>
+            </div>
+
+            <!-- BOTÃO DE PARA DE EMERGÊNCIA-->
+            <div class="input-group mb-3">
+                <span class="input-group-text col-4 fs-7" id="inputGroup-sizing-sm">BOTÃO DE EMERGÊNCIA:</span>
+                <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Digite aqui se houver irregularidade…">
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-54-outlined" autocomplete="off">
+                    <label class="btn btn-outline-success" for="btn-check-54-outlined">ok</label><br>
+                </div>
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-53-outlined" autocomplete="off">
+                    <label class="btn btn-outline-danger" for="btn-check-53-outlined">k.o</label>
+                </div>
+            </div>
+            <!-- SISTEMA DE INCÊNDIO -->
+            <div class="input-group mb-3">
+                <span class="input-group-text col-4 fs-7" id="inputGroup-sizing-sm">SISTEMA DE INCÊNDIO:</span>
+                <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Digite aqui se houver irregularidade…">
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-52-outlined" autocomplete="off">
+                    <label class="btn btn-outline-success" for="btn-check-52-outlined">ok</label><br>
+                </div>
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-51-outlined" autocomplete="off">
+                    <label class="btn btn-outline-danger" for="btn-check-51-outlined">k.o</label>
+                </div>
+            </div>
+            <!-- ALERTA DE MANUTENÇÃO -->
+            <div class="input-group mb-3">
+                <span class="input-group-text col-4 fs-7" id="inputGroup-sizing-sm">ALERTA DE MANUTENÇÃO:</span>
+                <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Digite aqui se houver irregularidade…">
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-50-outlined" autocomplete="off">
+                    <label class="btn btn-outline-success" for="btn-check-50-outlined">ok</label><br>
+                </div>
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-49-outlined" autocomplete="off">
+                    <label class="btn btn-outline-danger" for="btn-check-49-outlined">k.o</label>
+                </div>
+            </div>
+
+            <hr>
+            <div class="form-group">
+                <h3><b>RISCOS ELÉTRICOS:</b></h3>
+                <P>Painéis elétricos devidamente fechados, alterrados e sinalizados? Há alguma fiação danificada ou exposta nos equipamentos?</P>
+            </div>
+
+            <!-- RISCO ELÉTRICO -->
+            <div class="input-group mb-3">
+                <span class="input-group-text col-4 fs-7" id="inputGroup-sizing-sm">RISCO ELÉTRICO:</span>
+                <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Digite aqui se houver irregularidade…">
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-48-outlined" autocomplete="off">
+                    <label class="btn btn-outline-success" for="btn-check-48-outlined">ok</label><br>
+                </div>
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-47-outlined" autocomplete="off">
+                    <label class="btn btn-outline-danger" for="btn-check-47-outlined">k.o</label>
+                </div>
+            </div>
+            <!-- FIAÇÃO EXPOSTA -->
+            <div class="input-group mb-3">
+                <span class="input-group-text col-4 fs-7" id="inputGroup-sizing-sm">FIAÇÃO EXPOSTA:</span>
+                <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Digite aqui se houver irregularidade…">
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-46-outlined" autocomplete="off">
+                    <label class="btn btn-outline-success" for="btn-check-46-outlined">ok</label><br>
+                </div>
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-45-outlined" autocomplete="off">
+                    <label class="btn btn-outline-danger" for="btn-check-45-outlined">k.o</label>
+                </div>
+            </div>
+
+            <hr>
+            <div class="form-group">
+                <h3><b>FERRAMENTAS:</b></h3>
+                <P>As ferramentas (alicate, chave de boca, martelo, tarugo, talhadeira, lixadeira, esmerilhadeira, rosqueadeira, macho manual, tesoura, apertadeira, etc.) estão em perfeitas condições de uso? são adequadas para o trabalho? apertadeiras tem proteção em bom estado de conservação?.</P>
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text col-4 fs-7" id="inputGroup-sizing-sm">ALICATE:</span>
+                <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Digite aqui se houver irregularidade…">
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-44-outlined" autocomplete="off">
+                    <label class="btn btn-outline-success" for="btn-check-44-outlined">ok</label><br>
+                </div>
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-43-outlined" autocomplete="off">
+                    <label class="btn btn-outline-danger" for="btn-check-43-outlined">k.o</label>
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text col-4 fs-7" id="inputGroup-sizing-sm">CHAVE DE BOCA:</span>
+                <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Digite aqui se houver irregularidade…">
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-42-outlined" autocomplete="off">
+                    <label class="btn btn-outline-success" for="btn-check-42-outlined">ok</label><br>
+                </div>
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-41-outlined" autocomplete="off">
+                    <label class="btn btn-outline-danger" for="btn-check-41-outlined">k.o</label>
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text col-4 fs-7" id="inputGroup-sizing-sm">MARTELO:</span>
+                <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Digite aqui se houver irregularidade…">
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-40-outlined" autocomplete="off">
+                    <label class="btn btn-outline-success" for="btn-check-40-outlined">ok</label><br>
+                </div>
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-39-outlined" autocomplete="off">
+                    <label class="btn btn-outline-danger" for="btn-check-39-outlined">k.o</label>
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text col-4 fs-7" id="inputGroup-sizing-sm">TARUGO:</span>
+                <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Digite aqui se houver irregularidade…">
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-38-outlined" autocomplete="off">
+                    <label class="btn btn-outline-success" for="btn-check-38-outlined">ok</label><br>
+                </div>
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-37-outlined" autocomplete="off">
+                    <label class="btn btn-outline-danger" for="btn-check-37-outlined">k.o</label>
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text col-4 fs-7" id="inputGroup-sizing-sm">TALHADEIRA:</span>
+                <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Digite aqui se houver irregularidade…">
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-36-outlined" autocomplete="off">
+                    <label class="btn btn-outline-success" for="btn-check-36-outlined">ok</label><br>
+                </div>
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-35-outlined" autocomplete="off">
+                    <label class="btn btn-outline-danger" for="btn-check-35-outlined">k.o</label>
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text col-4 fs-7" id="inputGroup-sizing-sm">LIXADEIRA:</span>
+                <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Digite aqui se houver irregularidade…">
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-34-outlined" autocomplete="off">
+                    <label class="btn btn-outline-success" for="btn-check-34-outlined">ok</label><br>
+                </div>
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-33-outlined" autocomplete="off">
+                    <label class="btn btn-outline-danger" for="btn-check-33-outlined">k.o</label>
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text col-4 fs-7" id="inputGroup-sizing-sm">ESMERILHADEIRA:</span>
+                <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Digite aqui se houver irregularidade…">
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-32-outlined" autocomplete="off">
+                    <label class="btn btn-outline-success" for="btn-check-32-outlined">ok</label><br>
+                </div>
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-31-outlined" autocomplete="off">
+                    <label class="btn btn-outline-danger" for="btn-check-31-outlined">k.o</label>
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text col-4 fs-7" id="inputGroup-sizing-sm">ROSQUEADEIRA:</span>
+                <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Digite aqui se houver irregularidade…">
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-30-outlined" autocomplete="off">
+                    <label class="btn btn-outline-success" for="btn-check-30-outlined">ok</label><br>
+                </div>
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-29-outlined" autocomplete="off">
+                    <label class="btn btn-outline-danger" for="btn-check-29-outlined">k.o</label>
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text col-4 fs-7" id="inputGroup-sizing-sm">MACHO MANUAL:</span>
+                <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Digite aqui se houver irregularidade…">
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-28-outlined" autocomplete="off">
+                    <label class="btn btn-outline-success" for="btn-check-28-outlined">ok</label><br>
+                </div>
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-27-outlined" autocomplete="off">
+                    <label class="btn btn-outline-danger" for="btn-check-27-outlined">k.o</label>
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text col-4 fs-7" id="inputGroup-sizing-sm">TESOURA:</span>
+                <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Digite aqui se houver irregularidade…">
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-26-outlined" autocomplete="off">
+                    <label class="btn btn-outline-success" for="btn-check-26-outlined">ok</label><br>
+                </div>
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-25-outlined" autocomplete="off">
+                    <label class="btn btn-outline-danger" for="btn-check-25-outlined">k.o</label>
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text col-4 fs-7" id="inputGroup-sizing-sm">APERTADEIRA:</span>
+                <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Digite aqui se houver irregularidade…">
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-24-outlined" autocomplete="off">
+                    <label class="btn btn-outline-success" for="btn-check-24-outlined">ok</label><br>
+                </div>
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-23-outlined" autocomplete="off">
+                    <label class="btn btn-outline-danger" for="btn-check-23-outlined">k.o</label>
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text col-4 fs-7" id="inputGroup-sizing-sm">ETC:</span>
+                <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Digite aqui se houver irregularidade…">
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-22-outlined" autocomplete="off">
+                    <label class="btn btn-outline-success" for="btn-check-22-outlined">ok</label><br>
+                </div>
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-21-outlined" autocomplete="off">
+                    <label class="btn btn-outline-danger" for="btn-check-21-outlined">k.o</label>
+                </div>
+            </div>
+
+            <hr>
+            <div class="form-group">
+                <h3><b>CARRINHOS / EMBALAGENS:</b></h3>
+                <P>Verificar estrutura, posição, estado de conservação, travas de segurança e condições de uso do carrinho de peças, gravitacionais, tubulares, caçambas, etc.</P>
+            </div>
+            <!-- CARRINHO -->
+            <div class="input-group mb-3">
+                <span class="input-group-text col-4 fs-7" id="inputGroup-sizing-sm">CARRINHO:</span>
+                <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Digite aqui se houver irregularidade…">
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-20-outlined" autocomplete="off">
+                    <label class="btn btn-outline-success" for="btn-check-20-outlined">ok</label><br>
+                </div>
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-19-outlined" autocomplete="off">
+                    <label class="btn btn-outline-danger" for="btn-check-19-outlined">k.o</label>
+                </div>
+            </div>
+            <!-- TRAVA DE SEGURANÇA -->
+            <div class="input-group mb-3">
+                <span class="input-group-text col-4 fs-7" id="inputGroup-sizing-sm">TRAVA DE SEGURANÇA:</span>
+                <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Digite aqui se houver irregularidade…">
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-18-outlined" autocomplete="off">
+                    <label class="btn btn-outline-success" for="btn-check-18-outlined">ok</label><br>
+                </div>
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-17-outlined" autocomplete="off">
+                    <label class="btn btn-outline-danger" for="btn-check-17-outlined">k.o</label>
+                </div>
+            </div>
+            <!-- CAÇAMBAS -->
+            <div class="input-group mb-3">
+                <span class="input-group-text col-4 fs-7" id="inputGroup-sizing-sm">CAÇAMBAS:</span>
+                <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Digite aqui se houver irregularidade…">
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-16-outlined" autocomplete="off">
+                    <label class="btn btn-outline-success" for="btn-check-16-outlined">ok</label><br>
+                </div>
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-15-outlined" autocomplete="off">
+                    <label class="btn btn-outline-danger" for="btn-check-15-outlined">k.o</label>
+                </div>
+            </div>
+            <!-- TUBULARES -->
+            <div class="input-group mb-3">
+                <span class="input-group-text col-4 fs-7" id="inputGroup-sizing-sm">TUBULARES:</span>
+                <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Digite aqui se houver irregularidade…">
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-14-outlined" autocomplete="off">
+                    <label class="btn btn-outline-success" for="btn-check-14-outlined">ok</label><br>
+                </div>
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-13-outlined" autocomplete="off">
+                    <label class="btn btn-outline-danger" for="btn-check-13-outlined">k.o</label>
+                </div>
+            </div>
+            <!-- OUTROS -->
+            <div class="input-group mb-3">
+                <span class="input-group-text col-4 fs-7" id="inputGroup-sizing-sm">OUTROS:</span>
+                <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Digite aqui se houver irregularidade…">
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-12-outlined" autocomplete="off">
+                    <label class="btn btn-outline-success" for="btn-check-12-outlined">ok</label><br>
+                </div>
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-11-outlined" autocomplete="off">
+                    <label class="btn btn-outline-danger" for="btn-check-11-outlined">k.o</label>
+                </div>
+            </div>
+
+            <hr>
+            <div class="form-group">
+                <h3><b>EMERGÊNCIAS:</b></h3>
+                <P>Verificar se os extintores, hidrantes, rotas de fuga e outros itens para emergências estão desobstruídos, integros e sinalizados adequadamente.</P>
+            </div>
+            <!-- EXTINTORES -->
+            <div class="input-group mb-3">
+                <span class="input-group-text col-4 fs-7" id="inputGroup-sizing-sm">EXTINTORES:</span>
+                <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Digite aqui se houver irregularidade…">
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-10-outlined" autocomplete="off">
+                    <label class="btn btn-outline-success" for="btn-check-10-outlined">ok</label><br>
+                </div>
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-9-outlined" autocomplete="off">
+                    <label class="btn btn-outline-danger" for="btn-check-9-outlined">k.o</label>
+                </div>
+            </div>
+            <!-- HIDRANTES -->
+            <div class="input-group mb-3">
+                <span class="input-group-text col-4 fs-7" id="inputGroup-sizing-sm">HIDRANTES:</span>
+                <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Digite aqui se houver irregularidade…">
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-8-outlined" autocomplete="off">
+                    <label class="btn btn-outline-success" for="btn-check-8-outlined">ok</label><br>
+                </div>
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-7-outlined" autocomplete="off">
+                    <label class="btn btn-outline-danger" for="btn-check-7-outlined">k.o</label>
+                </div>
+            </div>
+            <!-- ROTA DE FUGA -->
+            <div class="input-group mb-3">
+                <span class="input-group-text col-4 fs-7" id="inputGroup-sizing-sm">ROTA DE FUGA:</span>
+                <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Digite aqui se houver irregularidade…">
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-6-outlined" autocomplete="off">
+                    <label class="btn btn-outline-success" for="btn-check-6-outlined">ok</label><br>
+                </div>
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-5-outlined" autocomplete="off">
+                    <label class="btn btn-outline-danger" for="btn-check-5-outlined">k.o</label>
+                </div>
+            </div>
+            <!-- SINALIZAÇÃO -->
+            <div class="input-group mb-3">
+                <span class="input-group-text col-4 fs-7" id="inputGroup-sizing-sm">SINALIZAÇÃO:</span>
+                <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Digite aqui se houver irregularidade…">
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-4-outlined" autocomplete="off">
+                    <label class="btn btn-outline-success" for="btn-check-4-outlined">ok</label><br>
+                </div>
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-3-outlined" autocomplete="off">
+                    <label class="btn btn-outline-danger" for="btn-check-3-outlined">k.o</label>
+                </div>
+            </div>
+            <!-- OUTROS -->
+            <div class="input-group mb-3">
+                <span class="input-group-text col-4 fs-7" id="inputGroup-sizing-sm">OUTROS:</span>
+                <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="Digite aqui se houver irregularidade…">
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-2-outlined" autocomplete="off">
+                    <label class="btn btn-outline-success" for="btn-check-2-outlined">ok</label><br>
+                </div>
+                <div class="input-group-text">
+                    <input type="checkbox" class="btn-check" id="btn-check-1-outlined" autocomplete="off">
+                    <label class="btn btn-outline-danger" for="btn-check-1-outlined">k.o</label>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body text-end">
+                    <h5 class="card-title text-center">LEMRE-SE TAMBÉM</h5>
+                    <p class="card-text text-center">Sua área sempre está limpa e bem organizada ? O S5 está em dia para evitar acidentes e acúmulos de sujeira desnecessários estintor de incêndio em data validade botão de energia ok ? <br> Se tá tudo certo ok ✅ se k.o k.o ❌</p>
+                    <a href="#" class="btn btn-primary">FINALIZAR CHECKLIST</a>
+                </div>
+            </div>
+      
+            
+            <!-- <input type="text" name="name" required>
+            <input type="email" name="email" required>
+            <input type="email" name="email" required>
+            <input type="email" name="email" required>
+            <input type="email" name="email" required>
+            <button type="submit">Send</button> -->
+        </form> 
+
+
+        <!-- <div id="newtask">
+            <input type="text" placeholder="Task to be done..">
+            <button id="push">Add</button>
+        </div>
+        <div id="tasks"></div> -->
+    </div>
+    <!--Script-->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</body>
+</html>
