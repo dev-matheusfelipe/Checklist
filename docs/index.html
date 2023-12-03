@@ -15,9 +15,13 @@
 </head>
 <body>
     <div class="container">
-
-        <h1>CHECKLIST DO OPERADOR</h1>
-
+        <div class="text-start">
+            <img src="logo.png" class="rounded" alt="logo Stellantis" style="height: 100px; border: none;"> 
+        </div>
+        <div class="text-center">
+            <h1 class="mt-2">CHECKLIST DO OPERADOR</h1>  
+        </div>
+    
         <p class="text-dark fs.min">Este checklist deverá ser preenchido pelo próprio empregado antes de iniciar suas atividades. Se houver alguma condição insegura ou item k.o ok (ko), comunicar a liderança e k.o iniciar a jornada. (marcação com um "x" em cada item ou "na" caso k.o se aplicar na área.)</p>
 
         <form action="https://formsubmit.co/matheus.f.basilio@gmail.com" method="POST">
@@ -34,7 +38,7 @@
             <!-- DOMÍNIO -->
             <div class="input-group input-group-sm mb-3">
                 <span class="input-group-text col-4 fs-7" id="inputGroup-sizing-sm">DOMÍNIO/OPERAÇÃO:</span>
-                <input type="text" name="DOMÍNIO/OPERAÇÃO:" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Insira o seu domínio/operação" required>
+                <input type="text" name="DOMINIO/OPERACAO:" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Insira o seu domínio/operação" required>
             </div>
             <!-- TURNO -->
             <div class="input-group input-group-sm mb-3">
@@ -522,10 +526,11 @@
             <!-- CARD -->
             <div class="card">
                 <div class="card-body text-end">
-                    <h5 class="card-title text-center">LEMRE-SE TAMBÉM</h5>
+                    <h5 class="card-title text-center">LEMBRE-SE TAMBÉM</h5>
                     <p class="card-text text-center">Sua área sempre está limpa e bem organizada ? O S5 está em dia para evitar acidentes e acúmulos de sujeira desnecessários estintor de incêndio em data validade botão de energia ok ? <br> Se tá tudo certo ok ✅ se k.o k.o ❌</p>
-                    <button type="submit" class="btn btn-primary">FINALIZAR CHECKLIST</button>
                     
+                    <button type="submit" class="btn btn-primary">FINALIZAR CHECKLIST</button>
+
                     <input type="hidden" name="_subject" value="Checklist Realizado!">
                     <input type="hidden" name="_template" value="table">
                     <input type="text" name="_honey" style="display: none;">
