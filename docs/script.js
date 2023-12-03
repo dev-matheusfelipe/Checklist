@@ -1,8 +1,6 @@
 document.getElementById("seuFormulario").addEventListener("submit", function(event){
     event.preventDefault();
   
-    // Aqui você pode adicionar o código para enviar o formulário por email
-  
     // Limpa todos os campos do formulário
     this.reset();
   
